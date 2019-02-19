@@ -27,5 +27,6 @@ gulp.task('watch', function() {
 // Every time css changed
 gulp.task('cssInject', function() {
   return gulp.src('./app/temp/styles/styles.css')
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload());
+    //.pipe(browserSync.stream());
 });
