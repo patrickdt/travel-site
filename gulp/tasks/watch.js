@@ -22,6 +22,10 @@ gulp.task('watch', function() {
       gulp.series('styles', 'cssInject')();
   });
 
+  // runs webpack to bundle js files
+  watch('./app/assets/scripts/**/*.js', function() {
+    gulp.series('scripts', 'scriptsRefresh')();
+  });
 });
 
 // Every time css changed
@@ -29,4 +33,8 @@ gulp.task('cssInject', function() {
   return gulp.src('./app/temp/styles/styles.css')
     .pipe(browserSync.reload());
     //.pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', function() {
+  browserSync.reload();
 });
