@@ -3,6 +3,7 @@ import $ from 'jquery';
 class MobileMenu {
   constructor() {
     //alert("Testing from MobileMenu.")
+    this.siteHeader = $(".site-header");
     this.menuIcon = $(".site-header__menu-icon");
     this.menuContent = $(".site-header__menu-content");
     this.events();
@@ -16,6 +17,8 @@ class MobileMenu {
   toggleTheMenu() {
     this.menuContent.toggleClass("site-header__menu-content--is-visible");
     // so basically the "this" has the same instance as the "this" from events(). It needs to pass the instance to the method in order for the method to know which instance it's going to use from.
+    this.siteHeader.toggleClass("site-header--is-expanded");
+    this.menuIcon.toggleClass("site-header__menu-icon--close-x");
   }
 }
 
