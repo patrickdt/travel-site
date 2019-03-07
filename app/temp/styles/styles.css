@@ -1146,16 +1146,16 @@ Instead edit gulp/template/sprite */
 }
   }
 
+@media (min-width: 800px){
+
 .primary-nav--pull-right{
-    @mixn atMedium {
-      float: right;
-    }
+      float: right
+  }
   }
 
 .primary-nav ul {
     margin: 0;
     padding: 0;
-
   }
 
 .primary-nav ul::after {
@@ -1174,7 +1174,7 @@ Instead edit gulp/template/sprite */
 
 .primary-nav li {
       padding-right: 20px;
-      float: right;
+      float: left;
       display: block
   }
   }
@@ -1207,6 +1207,10 @@ Instead edit gulp/template/sprite */
       font-size: 1rem;
       background-color: transparent
   }
+
+      .primary-nav a.is-current-link {
+        color: #fabb69;
+      }
   }
 
 .reveal-item {
