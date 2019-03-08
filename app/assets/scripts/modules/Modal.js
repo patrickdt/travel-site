@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 class Modal {
-  constructor {
+  constructor() {
     this.openModalButton = $(".open-modal");
     this.modal = $(".modal");
     this.closeModalButton = $(".modal__close");
@@ -33,7 +33,6 @@ class Modal {
   closeModal() {
     this.modal.removeClass("modal--is-visible");
   }
-
 }
 
 export default Modal;
