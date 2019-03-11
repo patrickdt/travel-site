@@ -6,6 +6,7 @@
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^4.1.6",
     "normalize.css": "^8.0.1",
+    "picturefill": "^3.0.3",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
