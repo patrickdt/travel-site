@@ -24,7 +24,7 @@ gulp.task('watch', function() {
 
   // runs webpack to bundle js files
   watch('./app/assets/scripts/**/*.js', function() {
-    gulp.series('scripts', 'scriptsRefresh')();
+    gulp.series('modernizr', 'scripts', 'scriptsRefresh')();
   });
 });
 
